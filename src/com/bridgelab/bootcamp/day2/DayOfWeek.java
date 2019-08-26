@@ -9,11 +9,11 @@ public class DayOfWeek
 		int d,m,y;
 		int d0,m0;
 		Scanner sc= new Scanner(System.in);
-		System.out.println("enter the day:");
+		System.out.println("enter the number for day:");
 		d=sc.nextInt();
-		System.out.println("enter the month");
+		System.out.println("enter the number for month");
 		m=sc.nextInt();
-		System.out.println("enter the year");
+		System.out.println("enter the number for year");
 		y=sc.nextInt();
 		
 		int y0 = y-(14-m)/12;

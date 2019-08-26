@@ -1,8 +1,8 @@
-package com.bridgelab.bootcamp.day2;
+ package com.bridgelab.bootcamp.day2;
 
 import java.util.Random;
 import java.util.Scanner;
-
+ 
 public class FlipCoin 
 {
 	public static void main(String args[])
@@ -13,7 +13,7 @@ public class FlipCoin
 		counter =0;
 		heads=0;
 		tails = 0;
-		Scanner sc= new Scanner(System.in);
+ 		Scanner sc= new Scanner(System.in);
 		System.out.println("enter amount of times you want to coin to be tossed:");
 		toss=sc.nextInt();
 		Random coinToss = new Random();

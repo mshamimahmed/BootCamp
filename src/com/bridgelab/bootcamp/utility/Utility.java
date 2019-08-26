@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Utility {
 
-	static Scanner scanner = new Scanner(System.in);
+	static Scanner sc = new Scanner(System.in);
 	
 	public static int scanInterger() {
-		return scanner.nextInt();
+		return sc.nextInt();
 	}
 }

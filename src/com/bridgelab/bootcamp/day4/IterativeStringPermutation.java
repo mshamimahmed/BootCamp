@@ -5,7 +5,7 @@ import java.util.List;
 
 public class IterativeStringPermutation
 {
-	public static void IterativeStringPermutation(String s)
+	public static String IterativePermutation(String s)
 	{
 		
 		List<String> partial = new ArrayList<>();//creating arraylist
@@ -22,12 +22,13 @@ public class IterativeStringPermutation
 			}
 		}
 		System.out.println(partial);
+		return s;
 	}
 		
 	public static void main(String[] args)
 	{
 		String s="ABC";
-		IterativeStringPermutation(s);
+		IterativePermutation(s);
 		
 	}
 }
