@@ -17,28 +17,21 @@ public class BLRandom
 	}
 	public static int uniform(int n)
 	{
-		if(n<=0)
-			throw new IllegalArgumentException("argument must be positivec:"+n);
 		return random.nextInt(n);
 	}
 	public static double uniform(double lo,double hi)
 	{
 		
-		if((lo<=hi) ||((long)hi-lo>=Integer.MAX_VALUE))
-		{
-			throw new IllegalArgumentException("invalid range:("+lo+","+hi+")"); 
-		}
 		return lo + uniform(hi,lo);
 	}
 	public static	boolean bernoulli(double p)
 	{
-		if(!(p>=0.0) && (p<=1.0))
-		{
-			throw new IllegalArgumentException("probability p must be between 0.0 and 1.0:"+p);
-			
-		}
+		if((p>=0.0) && (p<=1.0))
+			return  true;
 		return  true;
+
 	}
+
 	public static double gaussian()
 	{
 		double r,x,y;
@@ -58,30 +51,12 @@ public class BLRandom
 	{
 		if(probabilities ==null)
 			throw new IllegalArgumentException("argument array is null");
-		double EPSILON = 1e-14;
 		double sum=0.0;
 		for(int i=0;i<probabilities.length;i++)
 		{
-			if(!(probabilities[i]>=0.0))			
-				//throw IllegalArgumentException("array entry"+i+"must be nonnegative:"+probabilities[i]);
 			sum+=probabilities[i];
 		}
-		if(sum>1.0+EPSILON || sum<1.0 -EPSILON)
-			throw new IllegalArgumentException("sumo f array entries does not approximately equal 1.0:"+sum);
-		while(true)
-		{
-			/*
-			double r = uniform();
-			sum=0;
-			for(int i=0;i<probabilities.length;i++)
-			{
-				sum =sum + probabilities[i];
-				if(sum>r) 
-					return i;
-					
-			}
-			*/
-		}
+		return 1;
 					
 	}
 	public static void shuffle(int[] a)
@@ -114,11 +89,11 @@ public class BLRandom
 			System.out.println(uniform(10.0, 99.0));
 			System.out.println(bernoulli(0.5));
 			System.out.println(gaussian());
-//			System.out.println(gaussian(9.0,0.2));
+			System.out.println(gaussian(9.0,0.2));
 		
-		//	System.out.println(discrete(probabilities));
+			System.out.println(discrete( probabilities));
 			System.out.println();
-//			BLRandom.shuffle(a);
+			BLRandom.shuffle(a);
             for (String s : a)
                 System.out.print(s);
             System.out.println();

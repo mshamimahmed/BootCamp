@@ -1,5 +1,6 @@
 package com.bridgelab.lib;
 
-public class MathFunctions {
+public class MathFunctions 
+{
 
 }

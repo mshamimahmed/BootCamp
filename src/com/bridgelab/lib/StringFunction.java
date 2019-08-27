@@ -86,12 +86,6 @@ public class StringFunction
 	}
 	
 	
-	
-	
-	
-	
-	
-	
 	private static String RecursivePermutation(String c,String remaining)
 	{
 		
