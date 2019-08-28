@@ -1,0 +1,16 @@
+package com.bridgelab.bootcamp.day7;
+import java.awt.Graphics;
+import java.applet.Applet;
+public class PlotLIne extends Applet
+{
+	public void paint(Graphics g)
+	{
+		g.drawLine(0,0,40,20);
+		g.drawLine(20, 70, 100, 150);
+	}
+	public static void main(String args[])
+	{
+		double[] a= {20,30,40,50};
+		plotLine(a);
+	}
+}

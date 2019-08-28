@@ -123,6 +123,9 @@ public class BLRandom
             System.out.println();
 		}
 	}
+	public static void main(String[] args) {
+		random.nextInt(n);random.nextInt(n);
+	}
 	
 }
 

@@ -26,7 +26,7 @@ public class SwapBinaryNumber
 	{
 		SwapBinaryNumber obj= new SwapBinaryNumber();
 		System.out.println("binary representation of 10 is:");
-		obj.convertBinary(1);
+		obj.convertBinary(2);
 		
 		
 		System.out.println("\nthe swapping of nubbles:"+SwapBinaryNumber(2));
