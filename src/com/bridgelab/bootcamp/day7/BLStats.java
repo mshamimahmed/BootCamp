@@ -31,7 +31,7 @@ public class BLStats
 				min=a[i];
 			}
 		}
-		System.out.println("max value is:"+min);
+		System.out.println("min value is:"+min);
 		
 		return 1;
 	}

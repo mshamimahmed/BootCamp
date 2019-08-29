@@ -8,4 +8,9 @@ public class PlotGraph extends Applet
 		g.drawLine(0,0,40,20);
 		g.drawLine(20, 70, 100, 150);
 	}
+	public static void main(String args[])
+	{
+		double[] a= {20,30,40,50};
+	
+	}
 }

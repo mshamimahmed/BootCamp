@@ -3,14 +3,14 @@ import java.awt.Graphics;
 import java.applet.Applet;
 public class PlotLIne extends Applet
 {
-	public void paint(Graphics g)
+	public void paint(Graphics g,double[] a)
 	{
-		g.drawLine(0,0,40,20);
-		g.drawLine(20, 70, 100, 150);
+		g.drawLine(a);
+	
 	}
 	public static void main(String args[])
 	{
 		double[] a= {20,30,40,50};
-		plotLine(a);
+		paint(Graphics , a);
 	}
 }
