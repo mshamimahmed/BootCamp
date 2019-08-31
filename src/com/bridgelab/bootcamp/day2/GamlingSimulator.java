@@ -22,7 +22,7 @@ public class GamlingSimulator
 			while(cash>0 && cash<goal)
 			{
 				bet++;
-				if(Math.random()<0.5)
+				if(Math.random()<0.5) 
 				{
 					cash++;						
 				}
