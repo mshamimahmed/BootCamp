@@ -52,7 +52,7 @@ public class MergeSort
 				 array[k]=right[j];
 				 j++;
 				 k++;
-			 }
+			 } 
 		}
 	}
 	public static void main(String args[])

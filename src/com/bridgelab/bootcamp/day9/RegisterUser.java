@@ -47,17 +47,17 @@ public class RegisterUser
 		String fname,lname;
 //		String address;
 		Scanner sc = new Scanner(System.in);
-	/*	System.out.println("Enter the first name:");
+		System.out.println("Enter the first name:");
 		fname=sc.next();
 		System.out.println("Enter the last name:");
 		lname=sc.next();
 		System.out.println("first name is valid:"+validateFname(fname));
 		System.out.println("last name is valid:"+validateFname(lname));
-		System.out.println("Enter your address:");
-		address=sc.next();
-		System.out.println("Address is valid:"+validateAddress(address));
-	*/	
-	/*	System.out.println("Enter your email id:");
+//		System.out.println("Enter your address:");
+//		address=sc.next();
+//		System.out.println("Address is valid:"+validateAddress(address));
+		
+		System.out.println("Enter your email id:");
 		String email=sc.next();
 		System.out.println("your Email is valid:"+validateEmail(email));
 		System.out.println("Enter your phone number:");
@@ -69,8 +69,10 @@ public class RegisterUser
 		System.out.println("Enter your username is:");
 		String username=sc.next();
 		System.out.println("your user name is valid:"+validateUser(username));
-*/		System.out.println("Enter your password:");
+		System.out.println("Enter your password:");
 		String password=sc.next();
 		System.out.println("Your password is:"+validatePassword(password));
+		sc.close();
+		
 	}
 }

@@ -12,6 +12,7 @@ public class StringReplace
 		System.out.println("1.Chicks\n2.Duck\n3.Trukey\n4.Cat\n5.Mule"
 				+ "\n6.Turkey\n7.Dog\n8.Dog\n9.Pig\n10.Turtle\n11.Cow");
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("Enter your choice for the poem");
 		int ch=sc.nextInt();
 		String str1;
